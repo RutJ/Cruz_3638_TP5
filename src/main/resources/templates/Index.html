@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>index</title>
+<link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+	<div id="contenedor">
+		<header>
+			<div id="imagenEncabezado"><img id="imgCabecera" alt="" src="img/img-encabezado.png"></div>
+			<div id="textoEncabezado"><h1>Liga de Futbol Profesional</h1></div>
+		</header>
+		<nav>
+			<ul>
+				<li><a id="pagina" href="Index.html">Home</a></li>
+				<li><a href="fixture.html">Fixture y Resultados</a></li>
+				<li><a href="equipos.html">Equipos</a></li>
+				
+			</ul>
+			<div id="welcome">
+				<h4 th:text=" 'Bienvenido! '+ ${usuario}"></h4>
+			</div>
+		</nav>
+		<section>
+			<h1 class="titulo">Noticias</h1>
+		<div id="noticias">
+			
+			<div class="columna">
+				<img class="imgCol" alt="" src="img/img-cancha.jpg">
+				<div class="contenedorCol">
+					<h6>12/03/20</h6>
+					<p>Nueva noticia de los partidos suspendidos por la cuarentena</p>
+				</div>
+			</div>
+
+			<div class="columna">
+				<img class="imgCol" alt="" src="img/img-estadio.jpg">
+				<div class="contenedorCol">
+					<h6>13/03/20</h6>
+					<p>Repetición de la transmición en vivo de la final de la copa anual profecional</p>
+				</div>
+			</div>
+				
+			<div class="columna">
+				<img class="imgCol" alt="" src="img/img-pelota.jpg">
+				
+				<div class="contenedorCol">
+					<h6>20/03/20</h6>
+					<p>Reprogramación de sorteos para las próximas fechas.</p>
+				</div>
+			</div>
+			
+			</div>
+				
+		</section>
+		<aside>
+			
+			<h4 class="titulo">Auspiciantes</h4>
+			
+			<div id="auspiciantes">
+				<a href="https://www.adidas.com.ar"><img class="auspiciante" alt="" src="img/img-adidas.jpg"></a>
+				
+				<a href="https://www.macro.com.ar"><img class="auspiciante" alt="" src="img/img-macro.jpg"></a>
+				
+				<a href="https://www.fravega.com"><img class="auspiciante" alt="" src="img/img-chevrolet.jpg"></a>
+				
+				<a href="https://www.chevrolet.com.ar"><img class="auspiciante" alt="" src="img/img-fravega.jpg"></a>
+			</div>
+		</aside>
+		<footer>
+			<p>Avda.Pedro Ortiz de Zarate N° 455 - Tel 038884789555 
+			<img class="redSocial" alt="" src="img/img-facebook.jpg">
+			<img class="redSocial" alt="" src="img/img-twitter.jpg">
+			<img class="redSocial" alt="" src="img/img-instagram.jpg">
+			</p>
+		</footer>
+	</div>
+
+</body>
+</html>
